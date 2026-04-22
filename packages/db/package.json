@@ -1,0 +1,30 @@
+{
+  "name": "@my-better-t-app/db",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "db:studio": "drizzle-kit studio",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.10",
+    "@my-better-t-app/env": "*",
+    "dotenv": "^17.2.2",
+    "drizzle-orm": "^0.45.1",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@my-better-t-app/config": "*",
+    "drizzle-kit": "^0.31.8",
+    "typescript": "^5"
+  }
+}
