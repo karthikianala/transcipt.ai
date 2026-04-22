@@ -47,7 +47,7 @@ No Bun, no Docker, no PostgreSQL, no S3 account, no native build tools.
 # 1. Install deps
 npm install
 
-# 2. Env is already committed for demo:
+# 2. Add env files(Keys at the bottom of readme):
 #    apps/server/.env       (AssemblyAI key)
 #    apps/web/.env.local    (server URL)
 
