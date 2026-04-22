@@ -128,3 +128,13 @@ Open the web URL, allow microphone access, click **Record**, speak for 10–30s 
 - No k6 load test script committed (assignment requests 300K-req validation; out of scope for the 3-hour build).
 - Reconciliation is mount-only (no periodic background pass).
 - Upload retry is a simple 3-attempt exponential backoff, not a queue with dead-letter handling.
+
+## Environment Varibles
+-Server:
+  ASSEMBLYAI_API_KEY=d17658331f944d89b829550f25ea7c61
+  CORS_ORIGIN=http://localhost:3001
+  PORT=3000
+  NODE_ENV=development
+  
+-web:
+  NEXT_PUBLIC_SERVER_URL=http://localhost:3000
